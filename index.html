@@ -1,0 +1,166 @@
+
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preload" href="fonts/lato-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/lato-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/open-sans-bold.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+
+  <title>ShopOnline</title>
+</head>
+
+<body class="page">
+
+  <header class="header">
+    <div class="header__container container">
+
+      <a class="logo" href="#">Shop<span class="logo__online">Online</span></a>
+
+      <button class="menu-btn" type="button"><span class="menu-btn__burger"></span>Меню</button>
+
+      <form class="form" action="#" method="post" target="_blank">
+
+        <div class="form-search">
+          <label class="visually-hidden" for="search">Поиск товаров</label>
+          <input class="form-search__input" type="text" name="search" placeholder="Я ищу..." id="search">
+          <button class="form-search__btn" type="submit" aria-label="Кнопка поиска товаров"></button>
+        </div>
+
+      </form>
+
+      <div class="header__widget widget">
+        <div class="widget__column">
+          <a class="widget__link" href="#"><img class="widget__icon widget__icon_profile" src="img/header/profile.svg" alt="Профиль"></a>
+          <a class="widget__link-text" href="#">Профиль</a>
+        </div>
+        <div class="widget__column">
+          <a class="widget__link widget__link_basket" href="#">
+            <img class="widget__icon widget__icon_basket" src="img/header/basket.svg" alt="Корзина">
+            <span class="widget__basket-output">2</span>
+          </a>
+          <a class="widget__link-text" href="#">Корзина</a>
+        </div>
+        <div class="widget__column">
+          <a class="widget__link" href="#"><img class="widget__icon widget__icon_favorite" src="img/header/favorite.svg" alt="Избранное"></a>
+          <a class="widget__link-text" href="#">Избранное</a>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section class="promo">
+      <div class="container">
+        <h1 class="visually-hidden">Онлайн-магазин товаров</h1>
+        <ul class="promo__body">
+
+          <li class="promo__banner banner">
+            <h2 class="banner__title">-50% на все ноутбуки</h2>
+
+            <div class="timer">
+              <h3 class="timer__title">До конца акции:</h3>
+              <div class="timer__items">
+                <div class="timer__item">3<span class="timer__text">дня</span></div>
+                <div class="timer__item">8<span class="timer__text">часов</span></div>
+                <div class="timer__item">43<span class="timer__text">минуты</span></div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+
+            <ul class="promo__list">
+
+              <li class="promo__item-book">
+                <a class="promo__link promo__link-book" href="#">
+                  <p class="promo__text-book"><b class="promo__dfn-book">Книга – </b>лучший подарок</p>
+                </a>
+              </li>
+
+              <li class="promo__item-time">
+                <a class="promo__link promo__link-time" href="#">
+                  <strong class="promo__text-time">Время скидок!</strong>
+                  <p class="promo__discount-time discount">-25%</p>
+                </a>
+              </li>
+
+              <li class="promo__item-red-sneaker">
+                <a class="promo__link" href="#">
+                  <img class="promo__img promo__img_red-sneaker" src="img/section_promo/one-sneaker.jpg" alt="Скидка на кроссовки">
+                  <p class="promo__discount-red-sneaker discount">-40%</p>
+                </a>
+              </li>
+
+              <li class="promo__item-pair-of-sneakers">
+                <a class="promo__link promo__link-pair-of-sneakers" href="#">
+                  <p class="promo__text-pair-of-sneakers">Вторая пара кроссовок
+                    <i class="promo__text-part-pair-of-sneakers">в подарок!</i>
+                  </p>
+                </a>
+              </li>
+
+              <li class="promo__item-presents">
+                <a class="promo__link promo__link-presents" href="#">
+                  <p class="promo__text-presents">Идеи новогодних подарков</p>
+                </a>
+              </li>
+
+              <li class="promo__item-notebook">
+                <a class="promo__link" href="#">
+                  <img class="promo__img" src="img/section_promo/notebook.jpg" alt="Скидка на ноутбук">
+                  <div class="promo__block-notebook">
+                    <strong class="promo__text-notebook">Выгодно в декабре!</strong>
+                    <p class="discount">-15%</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="promo__item-decoration">
+                <a class="promo__link promo__link-decoration" href="#"><p class="promo__text-decoration">Новогодние украшения</p></a>
+              </li>
+
+              <li class="promo__item-dresses">
+                <a class="promo__link" href="#">
+                  <img class="promo__img" src="img/section_promo/dresses.jpg" alt="Скидка на летнее красное платье в цветочек">
+                  <p class="promo__discount-dresses discount">-55%</p>
+                </a>
+              </li>
+
+              <li class="promo__item-chemicals">
+                <a class="promo__link" href="#">
+                  <div class="promo__block-chemicals">
+                    <p class="discount">-25%</p>
+                    <p class="promo__text-chemicals">На бытовую химию</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="promo__item-toys">
+                <a class="promo__link" href="#">
+                  <img class="promo__img promo__img_toys" src="img/section_promo/toys.jpg" alt="Елочные игрушки красного и золотистого цвета">
+                </a>
+              </li>
+
+            </ul>
+
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+  </main>
+</body>
+
+</html>
